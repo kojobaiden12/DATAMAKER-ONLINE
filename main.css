@@ -1,6 +1,32 @@
 body{
-    background-color: aqua;
+
 }
 .logo_size{
     height: 30px;
+}
+
+.info-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 7.1vmin;
+
+}
+
+.info-card p{
+    max-width: 40ch;
+}
+
+.carro{
+    display: flex;
+    height: 28rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.carro-image{
+    display: flex;
+    justify-content: center;
+}
+.carro-image img{
+    object-fit: fill;
 }

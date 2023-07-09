@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test Arena</title>
+  <script type="text/javascript">
+    var openedWindow = null;
+
+    function openAndCloseTab(duration) {
+      openedWindow = window.open('https://tool.datamaker.io', '_blank');
+      setTimeout(function() {
+        closeTab();
+      }, duration);
+    }
+
+    function closeTab() {
+      if (openedWindow && !openedWindow.closed) {
+        openedWindow.close();
+        document.getElementById("openButton").disabled = true;
+      }
+    }
+  </script>
+</head>
+<body>
+
+      <div class="container">
+       <h1>Pre-Training Assessment Tests</h1>
+       <p>Welcome to the Pre-Training Assessment Tests! Please click the button below to start the assessment.</p>
+       <a href="#" class="btn btn-primary">Start Assessment</a>
+     <h1>Start Test 1 </h1>
+     <p>See how much you know about computers by taking this simple test. <br/>
+        It will help you understand what you know and what you need to learn more about. <br/> 
+        Computers are machines that do many things, and this test will ask you questions to see how well you understand the basics.</p>
+
+  <button id="openButton" onclick="openAndCloseTab(5000)">Take the first Test </button>
+  <br>
+       <h1>Start Test 2 </h1>
+       <p> Look at pictures and find the things that are different. We have a special tool that uses advanced technology to help you. <br>
+        Just draw a box around the thing you see that is not the same in the pictures. <br>
+        It's like a game to test your observation skills. <br>
+        First, read the instructions to learn how to play, and then take the test. <br>
+        Have fun and see how many differences you can find!</p>
+
+        <button id="openButton" onclick="openAndCloseTab(5000)">Watch Guide</button>  
+        <button id="openButton" onclick="openAndCloseTab(5000)">Start Test</button>
+     <h1>Start Test 3 </h1>
+
+     <p>Before you start drawing, it's important to read the instructions carefully. <br>
+        They will provide you with guidance on how to use the drawing tool effectively. <br>
+        Understanding the instructions will help you accurately recreate the shape you see on the screen.<br>
+        Take a moment to go through the instructions before you begin,and then use the drawing tool to create your drawing. <br>
+        Good luck!</p>
+        <button id="openButton" onclick="openAndCloseTab(5000)">Watch Guide</button>  
+        <button id="openButton" onclick="openAndCloseTab(5000)">Start Test</button>
+</body>
+</html>
